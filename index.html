@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agro Sustentável - O Futuro é Agora</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">Agro<span>Futuro</span></div>
+        <nav>
+            <a href="#sobre">Sobre</a>
+            <a href="#tecnologias">Inovações</a>
+            <a href="#simulador">Simulador</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>O Futuro do Agronegócio é Sustentável</h1>
+            <p>Descubra como a tecnologia e a preservação caminham juntas para alimentar o mundo.</p>
+            <a href="#tecnologias" class="btn">Explorar Inovações</a>
+        </div>
+    </section>
+
+    <section id="tecnologias" class="cards-section">
+        <h2>Tecnologias que Transformam</h2>
+        <div class="cards-container">
+            <div class="card" onclick="mostrarDetalhes('drones')">
+                <h3>Drones e IA</h3>
+                <p>Monitoramento de precisão que reduz o uso de defensivos químicos.</p>
+                <span class="saiba-mais">Clique para saber mais</span>
+            </div>
+            <div class="card" onclick="mostrarDetalhes('agua')">
+                <h3>Irrigação Inteligente</h3>
+                <p>Sistemas automatizados que economizam até 40% de água no plantio.</p>
+                <span class="saiba-mais">Clique para saber mais</span>
+            </div>
+            <div class="card" onclick="mostrarDetalhes('carbono')">
+                <h3>Carbono Neutro</h3>
+                <p>Práticas de manejo do solo que retêm o carbono e combatem o efeito estufa.</p>
+                <span class="saiba-mais">Clique para saber mais</span>
+            </div>
+        </div>
+        <div id="painel-detalhes" class="hidden">
+            <p id="texto-detalhe"></p>
+        </div>
+    </section>
+
+    <section id="simulador" class="simulador-section">
+        <h2>Simulador de Impacto AgroVerde</h2>
+        <p>Escolha uma prática sustentável e veja o impacto estimado na produção:</p>
+        
+        <div class="simulador-box">
+            <select id="opcao-sustentavel">
+                <option value="solar">Energia Solar na Fazenda</option>
+                <option value="roatacao">Rotação de Culturas</option>
+                <option value="bio">Uso de Bioinsumos</option>
+            </select>
+            <button onclick="calcularImpacto()">Simular Resultado</button>
+            
+            <div id="resultado-simulacao" class="resultado-box">
+                <p>Selecione uma opção e clique em simular para ver os dados reais.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 AgroFuturo. Cultivando um amanhã melhor.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
